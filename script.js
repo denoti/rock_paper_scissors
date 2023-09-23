@@ -83,8 +83,7 @@ buttons.forEach((button) => {
   };
 });
 
-playBtn.onclick = () => {
-  console.log(count);
+function reset() {
   buttons.forEach((button) => {
     selection.textContent = '';
     winner.textContent = '';
@@ -93,7 +92,13 @@ playBtn.onclick = () => {
     computerScore = 0;
     button.disabled = false;
     playBtn.disabled = true;
+    computer.textContent = '';
+    player.textContent = '';
   });
+}
+
+playBtn.onclick = () => {
+  reset();
 };
 
 function disableAllBtns() {
