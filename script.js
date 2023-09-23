@@ -64,8 +64,8 @@ function game(playerChoice) {
     message = `You win with ${playerScore} points`;
   }
   selection.textContent = displaySelection;
-  computer.textContent = `Computer Score ${computerScore}`;
-  player.textContent = `Player Score ${playerScore}`;
+  computer.textContent = `Computer Score: ${computerScore}`;
+  player.textContent = `Player Score: ${playerScore}`;
   return message;
 }
 
