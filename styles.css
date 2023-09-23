@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: cursive;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  height: 100vh;
+}
+
+div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+div:nth-child(2) {
+  flex-direction: column;
+  gap: 0;
+}
+
+button {
+  font-family: cursive;
+  cursor: pointer;
+  border: 1px saddlebrown;
+  border-radius: 5px;
+  font-size: 36px;
+  padding: 15px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  background-color: grey;
+  color: bisque;
+  transform: scale(1);
+}
+
+#selection {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    text-align: center;
+  }
+  button {
+    font-size: 24px;
+    padding: 10px;
+  }
+}
